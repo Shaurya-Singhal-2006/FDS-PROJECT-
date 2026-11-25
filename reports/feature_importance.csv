@@ -1,0 +1,11 @@
+feature,importance
+monetary,875.6444851681933
+frequency,344.05351478727164
+tenure_days,143.19212000101956
+distinct_products,138.26590287361046
+q4_order_share,101.58013263487437
+interval_mean_days,84.85250505512377
+avg_order_value,29.94976144344032
+interval_std_days,5.097559578129312
+return_rate,0.0
+recency_days,-13.674020256208768
