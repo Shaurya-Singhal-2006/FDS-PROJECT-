@@ -53,7 +53,7 @@ Features use transactions before 1 March 2011; the revenue target covers March t
 | `src/features.py` | Builds customer features using only data before each cutoff |
 | `src/models.py`, `src/predict.py` | Fits/evaluates models and exposes the batch prediction function |
 | `src/evaluate.py` | Calculates lift and creates model evaluation charts |
-| `app/streamlit_app.py` | Dashboard for portfolio, segments, customer lookup, performance, and uploads |
+| `app/streamlit_app.py` | Guided dashboard for portfolio, segments, customer lookup, model performance, file scoring, and metric definitions |
 | `notebooks/` | Guided exploratory analysis, feature engineering, and modeling notebooks |
 | `data/raw/` | Source workbook or input transactions (ignored by Git) |
 | `data/processed/` | Cleaned data, audit, and customer predictions (ignored by Git) |

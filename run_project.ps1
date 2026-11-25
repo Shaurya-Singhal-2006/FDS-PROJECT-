@@ -29,7 +29,7 @@ $pythonExe = Join-Path $PSScriptRoot ".venv\Scripts\python.exe"
 if (-not (Test-Path -LiteralPath $pythonExe)) { throw "Virtual environment setup failed." }
 
 Write-Host "Installing/checking project dependencies..." -ForegroundColor Cyan
-& $pythonExe -m pip install -r requirements.txt
+& $pythonExe -m pip install --timeout 120 --retries 10 -r requirements.txt
 if ($LASTEXITCODE -ne 0) { throw "Dependency installation failed. Check the error above and retry." }
 
 $predictions = Join-Path $PSScriptRoot "data\processed\customer_predictions.csv"
