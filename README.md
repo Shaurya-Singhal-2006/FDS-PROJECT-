@@ -53,12 +53,23 @@ Features use transactions before 1 March 2011; the revenue target covers March t
 | `src/features.py` | Builds customer features using only data before each cutoff |
 | `src/models.py`, `src/predict.py` | Fits/evaluates models and exposes the batch prediction function |
 | `src/evaluate.py` | Calculates lift and creates model evaluation charts |
-| `app/streamlit_app.py` | Guided dashboard for portfolio, segments, customer lookup, model performance, file scoring, and metric definitions |
+| `app/` | Modular Streamlit + Plotly dashboard (`streamlit_app.py`, `charts.py`, `components.py`, `insights.py`) for portfolio overview, customer segments, customer lookup, model performance, historical sales activity explorer, batch file scoring, and glossary |
 | `notebooks/` | Guided exploratory analysis, feature engineering, and modeling notebooks |
 | `data/raw/` | Source workbook or input transactions (ignored by Git) |
 | `data/processed/` | Cleaned data, audit, and customer predictions (ignored by Git) |
 | `reports/` | Executive summary, model metrics, segment/action tables, scenario, and figures |
 | `models/` | Saved model bundle (ignored by Git) |
+
+## Dashboard pages
+
+Run `python -m streamlit run app/streamlit_app.py` (or use `run_project.bat`) to explore:
+
+- **Portfolio overview:** KPI summary tiles, auto-generated key takeaways, zero-baseline segment revenue bar chart, segment treemap, Pareto/Lorenz concentration curve, log-scale CLV vs. churn scatter, and a downloadable high-risk retention priority list.
+- **Customer segments:** Profile cards with recommended actions, CLV/risk distributions, and filtered segment export.
+- **Customer lookup:** Customer ID autocomplete with portfolio rank/percentile, historical order timeline, top products, and country.
+- **Model performance:** Highlighted model comparison table, plain-English verdict, cumulative gains, decile lift, and permutation feature importance.
+- **Sales activity explorer:** Historical transaction explorer (Dec 2009–Dec 2011, clearly separated from forecasts) with Day/Week/Month granularity, period-over-period and YoY deltas, Q4 seasonality and anomaly highlights, weekday-by-hour heatmap, single day/week drill-down, and CSV export.
+- **Score a file & How to read this:** Interactive batch scoring via `src.predict.predict_file` and a metric glossary.
 
 ## Run the pieces manually
 

@@ -1,6 +1,6 @@
 segment,customers,predicted_revenue,avg_churn,revenue_share,recommended_action
-At-Risk,21,84142.84074332901,0.6465758924719125,0.01988769734673232,"Personalized win-back offer, prioritized by value and tested against a holdout."
-Champions,887,3023499.650125499,0.17268051453157782,0.714623436033852,"VIP service, early access and a replenishment reminder; avoid routine discounts."
-Hibernating,765,100385.05372628539,0.7813003599652711,0.02372664803098067,Capped low-cost reactivation test; suppress non-responders.
-Loyal,1192,735130.3098407633,0.3130539476153379,0.17375273978590697,Personalized cross-sell and relevant replenishment messages.
-Potential,1672,287741.24244495155,0.5519788886918852,0.068009478802528,Low-cost onboarding and second-purchase nudges.
+At-Risk,19,79809.10569396036,0.6451582860515329,0.018863391413139235,"Personalized win-back offer, prioritized by value and tested against a holdout."
+Champions,889,3027833.385174868,0.17414760997826376,0.7156477419674453,"VIP service, early access and a replenishment reminder; avoid routine discounts."
+Hibernating,713,94398.09683138721,0.7802720119215029,0.02231159256456409,Capped low-cost reactivation test; suppress non-responders.
+Loyal,1218,744725.3164905498,0.3112593534464057,0.17602058083578223,Personalized cross-sell and relevant replenishment messages.
+Potential,1698,284133.19269006193,0.5427165990851425,0.06715669321906902,Low-cost onboarding and second-purchase nudges.
